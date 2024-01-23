@@ -14,11 +14,31 @@
                 text-align: center
               font-size: 1vw
             }
+            .linkExport {
+                width: 25%;
+                height: 50%;
+                position: absolute;
+                left: 0%;
+            }
+            #oglink {
+                width:100%;
+                position:relative;
+                height: 15%;
+            }
+            
+
 
             
         </style>
 
         <h1>Welcome to LinkUse!</h1>
+
+        <div class="linkExport">
+            <input id="oglink" placeholder="Paste Google Drive link...">
+            <button id="export" onclick="giveLink();">Create Export Link</button>
+            <button id="cplink" onclick="copyLink();">Copy Export Link</button>
+            <p id="result">result</p>
+        </div>
 
     </body>
 </html>

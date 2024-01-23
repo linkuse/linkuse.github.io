@@ -28,7 +28,11 @@
                 position:relative;
                 height: 15%;
             }
-            
+            .linkbutton {
+                width:50%;
+                height:10%;
+                position: relative;
+            }
 
 
             
@@ -38,8 +42,8 @@
 
         <div class="linkExport debugborder">
             <input id="oglink" placeholder="Paste Google Drive link..." class="debugborder">
-            <button id="export" onclick="giveLink();" class="debugborder">Create Export Link</button>
-            <button id="cplink" onclick="copyLink();" class="debugborder">Copy Export Link</button>
+            <button id="export" onclick="giveLink();" class="debugborder linkbutton">Create Export Link</button>
+            <button id="cplink" onclick="copyLink();" class="debugborder linkbutton">Copy Export Link</button>
             <p id="result" class="debugborder">result</p>
         </div>
 

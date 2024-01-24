@@ -20,6 +20,12 @@
                 position: absolute;
                 left: 6.25%;
             }
+            .sourceViewer {
+                width: 25%;
+                height: 50%;
+                position: relative;
+                left: 6.25%;
+            }
             #oglink {
                 width:100%;
                 position:relative;
@@ -47,6 +53,11 @@
             <button id="export" onclick="giveLink();" class="linkbutton">Create Export Link</button>
             <button id="cplink" onclick="copyLink();" class="linkbutton">Copy Export Link</button>
             <p id="result">result</p>
+        </div>
+
+        <div class="sourceViewer">
+            <input id="oglink" placeholder="Paste website URL...">
+            <button id="source" onclick="openSource();" class="linkbutton">Open Source</button>
         </div>
 
     </body>

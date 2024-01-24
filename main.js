@@ -11,3 +11,7 @@ function copyLink() {
 	const linkid = ins.split("/")[5]
 	navigator.clipboard.writeText(basstr + linkid + "&export=download")
 }
+function openSource() {
+	var website = "view-source:" + document.getElementById("weburl").value
+	window.open(website, "_blank").focus()
+}

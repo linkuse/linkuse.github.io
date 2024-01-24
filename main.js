@@ -14,5 +14,5 @@ function copyLink() {
 function openSource() {
 	var website = "view-source:" + document.getElementById("weburl").value
 	alert(website);
-	window.open(website, "_blank").focus()
+	window.open(website)
 }

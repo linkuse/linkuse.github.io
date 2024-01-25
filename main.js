@@ -12,7 +12,7 @@ function copyLink() {
 	navigator.clipboard.writeText(basstr + linkid + "&export=download")
 }
 function openSource() {
-	var website = "view-source:" + document.getElementById("weburl").value
-	alert(website);
-	window.open(website)
+	var website = document.getElementById("weburl").value
+	var openedSite = window.open(website)
+	openedSite.location.href = "view-source:" + openedSite.location.href
 }
